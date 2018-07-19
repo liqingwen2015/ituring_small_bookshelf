@@ -1,0 +1,41 @@
+<view>
+    <block wx:if="{{showLoading}}">
+        <view class="donut-container">
+            <view class="donut"></view>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="book-container bg-white">
+            <view class="book-info">
+                <image class="book-image" mode="scaleToFill" src="{{book.imageUrl}}"></image>
+                <view class="book-desc">
+                    <text class="book-main-text">{{book.name}}</text>
+                    <text class="book-text">{{book.author}}</text>
+                    <text class="book-text">￥ {{book.price}} 元</text>
+                    <view class="loading-container" wx:if="{{downloading}}">
+                        <progress percent="{{downloadPercent}}" stroke-width="6" activeColor="#1aad19" backgroundColor="#cdcdcd" show-info />
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="comment-container">
+            <view class="comment-title">
+                <text>========== 简介 ==========</text>
+            </view>
+            <view class="comment-area">
+                <block>
+                    <view class="comment-placeholder">
+                        <text>{{book.intro}}</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <!-- bottom button -->
+        <view class="fixed-bottom block-full-width flex-container bg-white" wx:if="{{isAllowDownload}}">
+            <button class="full-button" type="primary" catchtap="download" data-id="{{bookInfo.id}}" data-name="{{bookInfo.name}}">
+                随书下载<text style="font-size:26rpx; color:gray">（已存在，则立即打开）</text>
+            </button>
+        </view>
+    </block>
+
+</view>

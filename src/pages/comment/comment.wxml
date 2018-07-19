@@ -1,0 +1,16 @@
+<!--pages/comment/comment.wxml-->
+<view class="comment-container">
+
+	<!-- comment area -->
+	<view class="comment-area bg-white">
+		<textarea placeholder="请留下你的评论和意见...留言后将被公开展示...仅限300字哦！！！" maxlength="300" value="{{comment}}" bindinput="inputComment"></textarea>
+	</view>
+
+	<!-- bottom button -->
+	<form report-submit bindsubmit="submitComment">
+	    <view class="fixed-bottom block-full-width flex-container bg-white">
+	        <button class="full-button" type="primary" form-type="submit"> 提交评论 </button>
+	    </view>
+    </form>
+
+</view>

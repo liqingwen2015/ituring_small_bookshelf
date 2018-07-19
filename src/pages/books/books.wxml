@@ -1,0 +1,22 @@
+<view class="">
+    <view class="nav fixed-top">
+        <view class="nav-item" bindtap="toggelType" data-type="1">
+            <text class="{{isNewest?'nav-item-text':''}}">最新</text>
+        </view>
+        <view class="nav-item" bindtap="toggelType" data-type="2">
+            <text class="{{isHot?'nav-item-text':''}}">热门</text>
+        </view>
+        <view class="nav-item" bindtap="toggelType" data-type="3">
+            <text class="{{isCommendatory?'nav-item-text':''}}">推荐</text>
+        </view>
+    </view>
+    <view style="height:120rpx"></view>
+    <view class="book-container">
+        <block wx:for="{{list}}" wx:key="index">
+            <view class="book-container-item" catchtap="goDetail" data-id="{{item.id}}" >
+                <image class="book-image" src="{{item.imageUrl}}" mode="scaleToFill" />
+                <text class="book-name">{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+</view>

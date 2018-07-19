@@ -1,0 +1,31 @@
+<!-- pages/detail/detail.wxml -->
+<view>
+    <view class="comment-container bg-white">
+        <view class="comment-loading" wx:if="{{isLoading}}">
+            <view class="donut"></view>
+        </view>
+        <view class="comment-area" wx:else>
+            <block wx:if="{{list.length > 0}}">
+                <view class="comment-item" wx:for="{{list}}" wx:key="index">
+                    <view class="avatar-container">
+                        <image mode="scaleToFill" src="{{item.avatarUrl}}" class="user-avatar"></image>
+                    </view>
+                    <view class="comment-content">
+                        <text class="user-name">{{item.nickName}}</text>
+                        <text class="user-comment">{{item.content}}</text>
+                        <text class="comment-time">{{item.creationTime}}</text>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view class="comment-placeholder">来当第一个评论的人吧～</view>
+            </block>
+        </view>
+    </view>
+    <!-- bottom button -->
+    <view class="fixed-bottom block-full-width flex-container bg-white">
+        <button class="full-button" type="primary" catchtap="goComment">
+            写评论
+        </button>
+    </view>
+</view>
