@@ -56,8 +56,8 @@ Page({
             tip.showToast('下载中，请稍安勿躁！！！');
             return;
         }
-
-        let cachekey = `Book_PDF_${that.id}`;
+  
+        let cachekey = `Book_PDF_${that.data.id}`;
         let path = cache.getSync(cachekey);
 
         if (!path) {
