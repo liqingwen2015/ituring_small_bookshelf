@@ -5,8 +5,8 @@
 
 #### 扫描或搜索
 ##### 方法一
-![二维码1](/readme/scan1.png)
-![二维码2](/readme/scan2.png)
+![二维码1](/readme/scan1.jpg)
+![二维码2](/readme/scan2.jpg)
 
 ##### 方法二
 搜索：【图灵小书架】或【图灵书籍】
