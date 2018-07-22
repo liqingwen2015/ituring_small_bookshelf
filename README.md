@@ -5,17 +5,17 @@
 
 #### 扫描或搜索
 ##### 方法一
-![二维码1](/readme/scan1.jpg)
-![二维码2](/readme/scan2.jpg)
+![二维码1](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/scan1.jpg)
+![二维码2](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/scan2.jpg)
 
 ##### 方法二
 搜索：【图灵小书架】
 
 #### 主要功能截图
-![首页](/readme/home.png)
-![图书列表](/readme/books.png)
-![详情](/readme/detail.png)
-![我的个人中心](/readme/my.png)
+![首页](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/home.png)
+![图书列表](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/books.png)
+![详情](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/detail.png)
+![我的个人中心](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/my.png)
 
 #### 软件架构
 后台采用 .NET WebAPI
