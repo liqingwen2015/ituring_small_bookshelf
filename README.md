@@ -18,11 +18,18 @@
 ![我的个人中心](http://pc8xyrz0g.bkt.clouddn.com/ituring_small_bookshelf/my.png)
 
 #### 软件架构
-后台采用 .NET WebAPI
+后台采用 .NET WebAPI（EF + AutoMapper + Autofac）
 
 #### 使用说明
 
 1. 打开微信开发者工具
 2. 路径引入 src 文件夹
 3. 输入 APPID 和文件名即可
+
+#### 版本说明
+v1.1 增加功能-历史上的今天
+v1.0.1 修复缓存文件名称
+v1.0 正式
+
+
 
