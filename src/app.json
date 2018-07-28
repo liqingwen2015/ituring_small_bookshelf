@@ -1,6 +1,8 @@
 {
     "pages": [
+
         "pages/home/home",
+        "pages/today/today",
         "pages/commentList/commentList",
         "pages/comment/comment",
         "pages/my/my",

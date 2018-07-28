@@ -1,10 +1,8 @@
-// pages/books/books.js
 
-// 获取服务器接口地址
 const api = require('../../config/config.js');
 const nvgt = require('../../utils/navigator.js');
 const tip = require('../../utils/tip.js');
-// 获取app应用实例
+
 const app = getApp();
 
 
@@ -32,6 +30,11 @@ Page({
     goCommentList: function () {
         nvgt.navigateTo('../commentList/commentList');
 
+    },
+
+    // 跳转到 历史上的今天
+    goToday: function () {
+        nvgt.navigateTo('../today/today');
     },
 
     // 检查登录状态

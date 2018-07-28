@@ -1,0 +1,21 @@
+<view class="today-container">
+    <view class="today-loading" wx:if="{{isLoading}}">
+        <view class="donut"></view>
+    </view>
+    <view class="bg-white" wx:else>
+        <block wx:if="{{list.length > 0}}">
+            <view class="today-item border-bottom">
+                <view>
+                    <text class="text-header" style="">年份</text>
+                    <text class="text-header" style="">事件（{{today}}）</text>
+                </view>
+            </view>
+            <view class="today-item border-bottom" wx:for="{{list}}" wx:key="index">
+                <view>
+                    <text class="text">{{item.year}}</text>
+                    <text class="text">{{item.title}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

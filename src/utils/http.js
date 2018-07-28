@@ -18,8 +18,8 @@ const get = (url, success = () => {}, fail = () => {}) => {
         },
         fail: function (err) {
             fail();
+            tip.showToast('貌似网络不好哦！请在网络顺畅的时候重新操作！');
             console.log(err);
-            //showLoading: false
         }
     });
 }
@@ -44,7 +44,7 @@ const post = (url, data, success = () => {}, fail = () => {}) => {
         fail: function (err) {
             fail();
             console.log(err);
-            //showLoading: false
+            tip.showToast('貌似网络不好哦！请在网络顺畅的时候重新操作！');
         }
     });
 }
@@ -59,7 +59,6 @@ const downloadFile = (url, success = () => {}, fail = () => {}, complete = () =>
                 return true;
             }
 
-            //console.log(res);
             return false;
         },
         fail: function (err) {

@@ -22,7 +22,6 @@ const showModal = (title, content, callback = () => {}) => {
 
 }
 
-
 module.exports = {
     showToast: showToast,
     showModal: showModal
