@@ -23,8 +23,8 @@
 #### 主要功能截图
 
 ![首页](./readme/home.png)
-![图书列表](./readmebooks.png)
-![详情](./readmedetail.png)
+![图书列表](./readme/books.png)
+![详情](./readme/detail.png)
 ![我的个人中心](./readme/my.png)
 
 #### 软件架构
